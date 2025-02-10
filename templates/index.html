@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <title>Geeks</title>
+</head>
+  
+<body>
+  {% include 'nav.html' %}
+  <img src="{{ url_for('static', filename='home.png') }}" alt="Geeks Image" class="h-[calc(100vh-4rem)] w-full object-cover object-center">
+  
+  <div class="container px-6 md:px-16">
+    <div class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-gray-500">About Geeks</h2>
+      <p>
+        Geeks is an online portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/coding questions and much more.
+      </p>
+    </div>
+
+    <div class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-gray-500">
+        Open Positions
+      </h2>
+      <p>
+        TODO - Show the jobs here
+      </p>
+    </div> 
+  </div>
+</body>
+</html>
