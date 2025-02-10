@@ -1,0 +1,15 @@
+<div class="flex justify-between items-center">
+  <div>
+    <h2 class="text-2xl text-gray-500 font-semibold">
+      {{job['title']}}
+    </h2>
+    <p><b>Location: </b>{{job["location"]}}</p>
+    <p><b>Salary: </b>{{job["salary"]}}</p>
+  </div>
+  <a href="mailto:arun@gmail.com?subject=Application for {{job['title']}}" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded cursor-pointer">
+    Apply
+  </a>
+</div>
+
+<!-- Line after content -->
+<hr class="border-t border-gray-300 mt-4 mb-4">

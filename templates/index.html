@@ -21,12 +21,14 @@
     </div>
 
     <div class="my-8">
-      <h2 class="text-3xl font-bold mb-4 text-gray-500">
+      <h2 class="text-3xl font-bold mb-8 text-gray-500">
         Open Positions
       </h2>
-      <p>
-        {{jobs}}
-      </p>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
     </div> 
   </div>
 
